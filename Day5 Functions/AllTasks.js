@@ -4,10 +4,6 @@ function checkEven(num){
     let res= num%2===0;
     return (res=== true)? "Even": "Odd"
 }
-// function checkEven(num){
-//     // let res=num%2;
-//     return (num % 2===0)? true: false
-// }
 function square(num) {
     return num*num;
 }
@@ -33,7 +29,7 @@ function concatStr(str1,str2) {
 }
 console.log(concatStr("Java","Script"));
 
-//Act 3
+//Activity 3
 let sum=(num1, num2)=>{
     let sum= num1 +num2;
     return sum;
@@ -41,16 +37,9 @@ let sum=(num1, num2)=>{
 //simple version: 
 // let sum= (num1, num2)=> num1 + num2
 console.log("Arrow sum: ",sum(4,7));
+
+//Task 6
 let spChar='$'
-// let checkStr=(str)=>{
-//     let i=0;
-//     for (const letter of str) {
-//         if (letter ==spChar) {
-//           i++;
-//         }
-//     }
-//     return i>=1;
-// }
 let checkStr=(str,spChar)=>{
     for (const letter of str) {
         if (letter == spChar) {
@@ -63,6 +52,13 @@ let myStr="20 thousand dollars";
 let myStr2="I have 20$ only!"
 console.log(`The string ${myStr} contains: ${spChar}`, checkStr(myStr));
 console.log(`The string ${myStr} contains: ${spChar}`, checkStr(myStr2));
+//Task 6 simpler version
+let char="$";
+let checkStr=(str,spChar)=>{
+    return str.includes(spChar);
+}
+console.log("the special character:"+char+" is present",checkStr("Jhon won 2 million $ lottery",char));
+console.log("the special character:"+char+" is present",checkStr("Jhon won 2 million dollar lottery", char));
 
 // Activity 4
 function product(num1, num2=5) {
@@ -79,14 +75,7 @@ console.log(greetings("Ali"));
 function printName(name) {
     console.log(name);
 }
-// function higherOrder(num,ftn) {
-//     let output=[]
-//     for (let i = 0; i < num; i++) {
-//         output= ftn(9,7);
-//     }
-//     return output;
-// }
-// console.log("higher Order sum: "+higherOrder(4,sum));
+
 function higherOrder(num,ftn) {
     for (let i = 0; i < num; i++) {
         ftn("Ali");
