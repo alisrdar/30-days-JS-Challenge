@@ -40,7 +40,7 @@ console.log("Arrow sum: ",sum(4,7));
 
 //Task 6
 let spChar='$'
-let checkStr=(str,spChar)=>{
+let checkStr1=(str,spChar)=>{
     for (const letter of str) {
         if (letter == spChar) {
             return true
@@ -50,8 +50,8 @@ let checkStr=(str,spChar)=>{
 }
 let myStr="20 thousand dollars";
 let myStr2="I have 20$ only!"
-console.log(`The string ${myStr} contains: ${spChar}`, checkStr(myStr));
-console.log(`The string ${myStr} contains: ${spChar}`, checkStr(myStr2));
+console.log(`The string ${myStr} contains: ${spChar}`, checkStr1(myStr));
+console.log(`The string ${myStr} contains: ${spChar}`, checkStr1(myStr2));
 //Task 6 simpler version
 let char="$";
 let checkStr=(str,spChar)=>{
