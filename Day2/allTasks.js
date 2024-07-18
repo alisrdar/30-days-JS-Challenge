@@ -49,16 +49,16 @@ console.log('7 === "7":' ,7 === "7");
 
 //Activity 4
 //Task 11
-let compareAnd = true && false;
-console.log(compareAnd);
+let opAnd = true && false;
+console.log(opAnd);
 
 //Task 12
-let compareOr = 1 || 0;
-console.log(compareOr);
+let opOr = 1 || 0;
+console.log(opOr);
 
 //Task 13
-let compareNot = !compareAnd;
-console.log(compareNot);
+let opNot = !opAnd;
+console.log(opNot);
 
 //Task 14
 let numA= -9
