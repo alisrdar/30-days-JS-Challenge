@@ -1,0 +1,46 @@
+        *{
+            font-size: 18px;
+        }
+        :root{
+            --bgColor: lavender;
+            --bgColor2 : whitesmoke;
+        }
+        body{
+            background-color: var(--bgColor);
+        }
+        h2{
+            font-size: 1.8rem;
+            text-align: center;
+            text-decoration: none;
+            color:navy;
+            margin-top: 1rem;
+        }
+        .gallery{
+            width: 600px;
+            display: flex;
+            flex-direction: column;
+            margin: 2rem;
+            padding: 1rem;
+            background-color: antiquewhite;
+            gap: 1rem;
+            border-radius: 2px solid transparent;
+            border-radius: 10px;
+        }
+        .images{
+            display: flex;
+            justify-content: space-evenly;
+            padding: .2rem;
+            border: 7px solid var(--bgColor2);
+            border-radius: 10px;
+            width: 400px;
+            height: 300px;
+            align-self: center;
+        }
+        .article{
+            margin: 2rem;
+            padding: 1rem;
+            background-color: var(--bgColor2);
+            border: 2px solid transparent;
+            border-radius: 10px;
+        }
+    

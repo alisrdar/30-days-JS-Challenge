@@ -4,49 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chai aur JS Events</title>
-    <style>
-        *{
-            font-size: 18px;
-        }
-        body{
-            background-color:lavender;
-        }
-        h2{
-            font-size: 1.8rem;
-            text-align: center;
-            text-decoration: none;
-            color:navy;
-            margin-top: 1rem;
-        }
-        .gallery{
-            width: 600px;
-            display: flex;
-            flex-direction: column;
-            margin: 2rem;
-            padding: 1rem;
-            background-color: antiquewhite;
-            gap: 1rem;
-            border-radius: 2px solid transparent;
-            border-radius: 10px;
-        }
-        .images{
-            display: flex;
-            justify-content: space-evenly;
-            padding: .2rem;
-            border: 7px solid whitesmoke;
-            border-radius: 10px;
-            width: 400px;
-            align-self: center;
-        }
-        .article{
-            margin: 2rem;
-            padding: 1rem;
-            background-color: whitesmoke;
-            border: 2px solid transparent;
-            border-radius: 10px;
-            
-        }
-    </style>
+    <link rel="stylesheet" href="./style.css">
+
 </head>
 <body>
     <article>
@@ -58,8 +17,8 @@
     </article>
     <div class="gallery">
         <h2>Double click to change image's visibility</h2>
-        <div class="images">
-            <img height="300px" width="95%"  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQi-e_x2bm9EzcXfrityQ1fvyxVPd_A2oCk_Q&s" alt="">
+        <div class="images" >
+            <img id="img1" height="300px" width="95%"  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQi-e_x2bm9EzcXfrityQ1fvyxVPd_A2oCk_Q&s" alt="">
         </div>
     </div>
     <script src="script.js"></script>

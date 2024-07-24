@@ -7,8 +7,34 @@ articleEditBtn.addEventListener("click", () => {
 });
 
 //Task 2
-const myImage = document.querySelector(".images");
-myImage.addEventListener("toggle", (params) => {
-  
-}
-)
+let visible = true;
+// accessing the image
+let myImage = document.querySelector("#img1");
+// adding the double click event
+myImage.addEventListener("dblclick", () => {
+    // checking & updatingvisbility
+    if (visible) {
+        myImage.style.opacity ="0";
+    } 
+    else{
+        myImage.style.opacity ="1";
+    }
+    // updating visibilty
+    visible = !visible;
+});
+
+// --------------------------> Activity 1 <--------------------------------
+// Task 3
+let paragraph = document.querySelector(".article");
+
+paragraph.addEventListener("mouseover", () => {
+    paragraph.style.backgroundColor = "orange";
+});
+
+// Task 4
+paragraph.addEventListener("mouseout", () => {
+    paragraph.style.backgroundColor = "var(--bgColor2)";
+});
+
+// --------------------------> Activity 1 <--------------------------------
+// Task 5
