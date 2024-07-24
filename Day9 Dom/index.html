@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            font-size: 18px;
+        }
+        body{
+            background-color:lavender;
+        }
+        .container{
+            display: flex;
+            flex-wrap : wrap;
+            gap : 20px;
+            padding: 20px 10px;
+            align-content :center;
+        } 
+        .box{
+            height: 220px;
+            width: 220px;
+            background-color:aquamarine;
+            display:flex;
+            flex-wrap: wrap;
+            align-content:center;
+            justify-content : center;
+
+            border: 2px solid black;
+            font-weight:bolder;
+            font-size: 1.3rem;  
+            text-align: center; 
+        }
+        .list{
+            background-color: whitesmoke;
+            width: 350px;
+            border: 4px solid white;
+            padding: 0.5rem 1rem;
+            border-radius: 10px;
+            margin: 2rem
+        }
+        h2{
+            font-size: 1.8rem;
+            text-align: center;
+            text-decoration: none;
+            color:navy;
+            margin-top: 1rem;
+        }
+        ul li{
+            font-size: 1.2rem;
+            list-style:circle;
+            color:green;
+        }
+        .gallery{
+            display: flex;
+            flex-direction: column;
+            margin: 2rem;
+            padding: 1rem;
+            background-color: antiquewhite;
+            gap: 1rem;
+            border-radius: 2px solid transparent;
+            border-radius: 10px;
+        }
+        .images{
+            display: flex;
+            justify-content: space-evenly;
+            padding: .2rem;
+            border: 7px solid whitesmoke;
+            border-radius: 10px;
+            width: 700px;
+            align-self: center;
+        }
+        .article{
+            margin: 2rem;
+            padding: 1rem;
+            background-color: whitesmoke;
+            border: 2px solid transparent;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<div>
+    <h2>Boxes</h2>
+    <div class="container">
+        <div id="box1" class="box">I'm Box 1</div>
+        <div id="box2" class="box">I'm Box 2</div>
+        <div id="box3" class="box">I'm Box 3</div>
+        <div id="box4" class="box">I'm Box 4</div>
+        <div id="box5" class="box">I'm Box 5</div>
+        <div id="box6" class="box">I'm Box 6</div>
+        <div id="box7" class="box">I'm Box 7</div>
+        <div id="box8" class="box">I'm Box 8</div>
+    </div>
+    <div class="list">
+        <h2>Fruits List</h2>
+        <ul>
+            <li>Apple</li>
+            <li>Mango</li>
+            <li>Banana</li>
+            <li>Cherry</li>
+        </ul>
+    </div>
+    <div class="gallery">
+        <h2>Hover to change Border Color</h2>
+        <div class="images">
+            <img height="200px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQi-e_x2bm9EzcXfrityQ1fvyxVPd_A2oCk_Q&s" alt="">
+            <img height="200px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQi-e_x2bm9EzcXfrityQ1fvyxVPd_A2oCk_Q&s" alt="">
+            <img height="200px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQi-e_x2bm9EzcXfrityQ1fvyxVPd_A2oCk_Q&s" alt="">
+        </div>
+    </div>
+    <article>
+        <div class="article">
+            <h2>Top News of the day!</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia quisquam, molestiae quaerat porro reiciendis excepturi. Hic minus nihil incidunt deleniti ratione nulla accusantium commodi, unde, ex consequuntur ut, excepturi nobis dicta libero autem nisi quae quod eaque assumenda voluptatem harum tempora cumque perspiciatis ullam. Libero doloremque fugit harum explicabo repellat nisi perferendis.</p>
+            <button id="btnEdit" type="submit">Change this Article</button>
+        </div>
+    </article>
+    <script src="script.js"></script>
+</body>
+</html>
