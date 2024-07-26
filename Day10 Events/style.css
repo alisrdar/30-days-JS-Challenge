@@ -1,0 +1,102 @@
+*{
+    font-size: 18px;
+}
+:root{
+    --bgColor: lavender;
+    --bgColor2 : whitesmoke;
+    --btnColor :  limegreen;
+}
+body{
+    background-color: var(--bgColor);
+    
+}
+h2{
+    font-size: 1.8rem;
+    text-align: center;
+    text-decoration: none;
+    color: navy;
+    margin-top: 1rem;
+}
+.gallery{
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    margin: 2rem;
+    padding: 1rem;
+    background-color: antiquewhite;
+    gap: 1rem;
+    border-radius: 2px solid transparent;
+    border-radius: 10px;
+}
+.images{
+    display: flex;
+    justify-content: space-evenly;
+    padding: .2rem;
+    border: 7px solid var(--bgColor2);
+    border-radius: 10px;
+    width: 400px;
+    height: 300px;
+    align-self: center;
+}
+.article{
+    margin: 2rem;
+    padding: 1rem;
+    background-color: var(--bgColor2);
+    border: 2px solid transparent;
+    border-radius: 10px;
+}
+.newForm{
+    margin: 2rem;
+    padding: 1rem;
+    background-color: var(--bgColor2);
+    border: 2px solid transparent;
+    border-radius: 10px;
+}
+.form-label{
+    display: block;
+    margin: 0rem 0rem 0.7rem 0.5rem;
+    padding: 4px 2px;
+    font-size: 1.2rem;
+}
+.form-control{
+    display: inline-block;
+    padding: .4rem .5rem;
+    width: 96%;
+    border: 2px solid var(--bgColor);
+    border-radius: 6px;
+}
+.btn{
+    margin: .5rem ;
+    background-color: var(--btnColor);
+    border: 2px solid white;
+    border-radius: 6px;
+    color: var(--bgColor2);
+    cursor: pointer;
+    height: 40px;
+}
+.form-check{
+    margin: 1rem 0;
+    font-size: 1.2rem;
+}
+.form-select {
+    margin: 0rem 0rem 0.7rem 0.5rem;
+    padding: .4rem .5rem;
+    font-size: 1.1rem;
+    display: block;
+    width: 96%;
+    border: 2px solid var(--bgColor);
+}
+.list{
+    background-color: whitesmoke;
+    width: 350px;
+    border: 4px solid white;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    margin: 2rem
+}
+ul li{
+    font-size: 1.2rem;
+    list-style:circle;
+    color:green;
+    /* visibility: visible; */
+}
